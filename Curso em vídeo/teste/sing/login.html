@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="login" id="login"> <!-- "input" é o campo de resposta-->
+        <input type="password" placeholder="senha" id="senha">
+        <input type="submit" onclick="logar(); return false"> <!-- 'return false' serve para aceitar o redirecionamento -->
+    </form>
+
+        <script>
+
+            function logar(){
+
+                var login = document.getElementById('login').value; //'value' serve para escolher o que for escrito no campo
+                var senha = document.getElementById('senha').value;
+
+                if(login == "admin" && senha == "admin"){
+                    alert('sucesso');
+                    location.href = "home.html"; //comando para redirecionar a página
+                }else{
+                    alert('usuário ou senha incorretos');
+                }
+            }
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .centered-div {
+            width: 300px; /* Largura desejada da div */
+            margin: 0 auto; /* Configuração para centralizar horizontalmente */
+            background-color: #ccc; /* Apenas para fins de demonstração */
+            padding: 20px;
+        }
+        .minha-div {
+            position: relative;
+            top: 20px; /* Move a div 20 pixels para baixo */
+            left: 30px; /* Move a div 30 pixels para a direita */
+        }
+        .elemento-pai {
+            position: relative;
+        }
+        .minha-div {
+            position: absolute;
+            top: 20px; /* Move a div 20 pixels para baixo do elemento pai */
+            left: 30px; /* Move a div 30 pixels para a direita do elemento pai */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="centered-div">
+        <!-- Conteúdo da div centralizada -->
+        <h1>Div Centralizada</h1>
+        <p>Esta é uma div centralizada horizontalmente na página.</p>
+    </div>
+</body>
+</html>

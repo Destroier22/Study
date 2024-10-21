@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <title>AppScale</title>
+    </head>
+    <body>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" id="login" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" id="senha" name="" required="">
+                    <label>Password</label>
+                </div>
+                <div class="button-container">
+                    <button class="sign-up-button" value="Logar" type="submit" onclick="logar(); return false"><label>Logar</label></button>
+                    <button class="sign-up-button" onclick="cadastrar(); return false"><label>Cadastrar</label></button>
+                </div>
+            </form>
+        </div>
+        
+        <script>
+
+            function logar(){
+
+            var login = document.getElementById('login').value; //'value' serve para escolher o que for escrito no campo
+                var senha = document.getElementById('senha').value;
+
+                if(login == "admin" && senha == "admin"){
+                    alert('login feito com sucesso');
+                    location.href = "menu.html"; //comando para redirecionar a página
+                }else{
+                    alert('usuário ou senha incorretos');
+                }
+            }
+
+         </script>
+    </body>
+</html>
