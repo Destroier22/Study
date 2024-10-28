@@ -16,12 +16,13 @@
     <h1>iniciando estudos com DOM</h1>
     <p>aqui vai o resultado</p>
     <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>clique em mim</div>
+    <div id="msg">clique em mim</div>
     <script>
         var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write(p1.innerText)
+        window.document.write(p1.innerText) //innerText pega o o texto em já o innerHTML pega o texto com as tags
         var corpo = window.document.body
         corpo.style.background = 'White'
+        
     </script>
 </body>
 </html>
