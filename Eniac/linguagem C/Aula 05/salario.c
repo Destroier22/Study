@@ -1,7 +1,0 @@
-#include <stdio.h>
-#include <stlib.h>
-int main(){
-    printf("Hello World!\n");
-    system("pause");
-    return 0;
-}
