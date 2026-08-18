@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: black;
+
+    background-color:aqua;
+    padding-left: 15px;
+}
+p {
+color: blueviolet;
+}
