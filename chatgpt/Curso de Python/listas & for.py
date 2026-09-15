@@ -58,9 +58,12 @@ numeros = [12, 7, 5, 20, 33, 42, 8, 11]
 # Escreva sua solução abaixo:
 
 for numero in numeros:
-    mod = numero % 2
+    soma = 0 
+    mod = numero % 2 
     if mod == 1:
-        paridade = "ímpar"
+        impar+=1
     else:
-        paridade = "par"
+        par+=1
+    soma += numero
+print(f"{par} números são pares\n{impar} são impares\nA soma de todos os números é igual a {soma}")
       
