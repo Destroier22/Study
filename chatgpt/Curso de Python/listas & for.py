@@ -49,3 +49,5 @@ numeros = [5, 10, 15, 20]
 
 # Escreva sua solução abaixo:
 
+for numero in numeros:
+         print(f"número: {numero}")
