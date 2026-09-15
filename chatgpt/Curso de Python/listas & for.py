@@ -139,5 +139,5 @@ for venda in vendas:
         menor+=1
     else:
         maior+=1
-total_faturado+=venda
+    total_faturado+=venda
 print(f"{maior} vendas de 100 reais ou mais.\n {menor}vendas abaixo de 100 reais.\nTotal faturado R${total_faturado}")
