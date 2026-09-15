@@ -50,4 +50,17 @@ numeros = [5, 10, 15, 20]
 # Escreva sua solução abaixo:
 
 for numero in numeros:
-         print(f"número: {numero}")
+    print(f"número: {numero}")
+
+# EXERCÍCIO 2
+numeros = [12, 7, 5, 20, 33, 42, 8, 11]
+
+# Escreva sua solução abaixo:
+
+for numero in numeros:
+    mod = numero % 2
+    if mod == 1:
+        paridade = "ímpar"
+    else:
+        paridade = "par"
+      
