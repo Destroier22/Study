@@ -97,17 +97,19 @@ for numero in numeros:
 # EXERCÍCIO 2 — EM ANDAMENTO
 numeros = [12, 7, 5, 20, 33, 42, 8, 11]
 
-# Seu progresso até agora foi mantido:
-for numero in numeros:
-    mod = numero % 2
-    if mod == 1:
-        paridade = "ímpar"
-    else:
-        paridade = "par"
+# Escreva sua solução abaixo:
 
-# Continue sua solução abaixo.
-# Dica: antes do for, você precisará criar três variáveis começando em 0:
-# uma para pares, uma para ímpares e uma para a soma.
+for numero in numeros:
+    soma = 0
+    par = 0
+    impar = 0 
+    mod = numero % 2 
+    if mod == 1:
+        impar+=1
+    else:
+        par+=1
+    soma += numero
+print(f"{par} números são pares\n{impar} são impares\nA soma de todos os números é igual a {soma}")
 
 
 # EXERCÍCIO 3 — FAÇA APÓS CONCLUIR O 2
