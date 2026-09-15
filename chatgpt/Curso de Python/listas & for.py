@@ -27,7 +27,7 @@ Número: 15
 Número: 20
 
 Não use quatro print() separados.
-
+=========================================================================================
 EXERCÍCIO 2 — INTERMEDIÁRIO
 Use a lista abaixo:
 
@@ -57,7 +57,7 @@ for numero in [2, 4, 6]:
 Formas abreviadas que você verá muito em Python:
 contador += 1       # igual a contador = contador + 1
 total += numero     # igual a total = total + numero
-
+==========================================================================================
 EXERCÍCIO 3 — PRÁTICA COM CONTADOR
 idades = [15, 22, 17, 30, 18, 12, 40]
 
@@ -68,7 +68,7 @@ Percorra a lista e descubra:
 Saída esperada:
 Menores: 3
 Maiores ou iguais a 18: 4
-
+===========================================================================================
 EXERCÍCIO 4 — PRÁTICA COM CONTADOR + ACUMULADOR
 vendas = [120, 80, 250, 40, 310, 95]
 
@@ -98,11 +98,11 @@ for numero in numeros:
 numeros = [12, 7, 5, 20, 33, 42, 8, 11]
 
 # Escreva sua solução abaixo:
+soma = 0
+par = 0
+impar = 0 
 
 for numero in numeros:
-    soma = 0
-    par = 0
-    impar = 0 
     mod = numero % 2 
     if mod == 1:
         impar+=1
@@ -116,9 +116,28 @@ print(f"{par} números são pares\n{impar} são impares\nA soma de todos os núm
 idades = [15, 22, 17, 30, 18, 12, 40]
 
 # Escreva sua solução abaixo:
-
+menor = 0
+maior = 0
+for idade in idades:
+    if idade < 18:
+        menor+=1
+    else:
+        maior+=1
+print(f"Menores: {menor}\nMaiores ou iguais a 18: {maior}")
 
 # EXERCÍCIO 4 — FAÇA APÓS CONCLUIR O 3
 vendas = [120, 80, 250, 40, 310, 95]
 
 # Escreva sua solução abaixo:
+
+maior=0
+menor=0
+total_faturado = 0
+
+for venda in vendas:
+    if venda < 100:
+        menor+=1
+    else:
+        maior+=1
+total_faturado+=venda
+print(f"{maior} vendas de 100 reais ou mais.\n {menor}vendas abaixo de 100 reais.\nTotal faturado R${total_faturado}")
