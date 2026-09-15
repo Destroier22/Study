@@ -23,12 +23,13 @@ Saída esperada:
 Número: 5
 Número: 10
 Número: 15
+Número: 15
 Número: 20
 
 Não use quatro print() separados.
 
 EXERCÍCIO 2 — INTERMEDIÁRIO
-Depois de concluir o exercício 1, use a lista abaixo:
+Use a lista abaixo:
 
 numeros = [12, 7, 5, 20, 33, 42, 8, 11]
 
@@ -38,29 +39,84 @@ Percorra a lista e descubra:
 - a soma de todos os números
 
 Não use sum().
-Dica: crie variáveis contadoras antes do for e altere seus valores dentro dele.
+
+NOVO CONCEITO — CONTADORES E ACUMULADORES
+Um contador começa normalmente em 0 e aumenta quando alguma condição acontece.
+Um acumulador também começa em 0, mas recebe valores que queremos somar ao longo do for.
+
+Exemplo de contador:
+contador = 0
+for numero in [2, 4, 6]:
+    contador = contador + 1
+
+Exemplo de acumulador:
+total = 0
+for numero in [2, 4, 6]:
+    total = total + numero
+
+Formas abreviadas que você verá muito em Python:
+contador += 1       # igual a contador = contador + 1
+total += numero     # igual a total = total + numero
+
+EXERCÍCIO 3 — PRÁTICA COM CONTADOR
+idades = [15, 22, 17, 30, 18, 12, 40]
+
+Percorra a lista e descubra:
+- quantas pessoas são menores de 18 anos
+- quantas pessoas têm 18 anos ou mais
+
+Saída esperada:
+Menores: 3
+Maiores ou iguais a 18: 4
+
+EXERCÍCIO 4 — PRÁTICA COM CONTADOR + ACUMULADOR
+vendas = [120, 80, 250, 40, 310, 95]
+
+Percorra a lista e descubra:
+- quantas vendas foram de 100 reais ou mais
+- quantas vendas foram abaixo de 100 reais
+- qual foi o valor total vendido
+
+Não use sum().
+
+Saída esperada:
+Vendas de R$100 ou mais: 3
+Vendas abaixo de R$100: 3
+Total vendido: R$895
 
 IMPORTANTE:
-Resolva um exercício por vez. Não apague o enunciado; escreva sua solução abaixo dele.
+Resolva um exercício por vez. Não apague o enunciado; escreva sua solução na área correspondente.
 '''
 
-# EXERCÍCIO 1
+# EXERCÍCIO 1 — CONCLUÍDO
 numeros = [5, 10, 15, 20]
-
-# Escreva sua solução abaixo:
 
 for numero in numeros:
     print(f"número: {numero}")
 
-# EXERCÍCIO 2
+# EXERCÍCIO 2 — EM ANDAMENTO
 numeros = [12, 7, 5, 20, 33, 42, 8, 11]
 
-# Escreva sua solução abaixo:
-
+# Seu progresso até agora foi mantido:
 for numero in numeros:
     mod = numero % 2
     if mod == 1:
         paridade = "ímpar"
     else:
         paridade = "par"
-      
+
+# Continue sua solução abaixo.
+# Dica: antes do for, você precisará criar três variáveis começando em 0:
+# uma para pares, uma para ímpares e uma para a soma.
+
+
+# EXERCÍCIO 3 — FAÇA APÓS CONCLUIR O 2
+idades = [15, 22, 17, 30, 18, 12, 40]
+
+# Escreva sua solução abaixo:
+
+
+# EXERCÍCIO 4 — FAÇA APÓS CONCLUIR O 3
+vendas = [120, 80, 250, 40, 310, 95]
+
+# Escreva sua solução abaixo:
