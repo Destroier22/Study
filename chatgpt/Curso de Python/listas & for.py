@@ -130,14 +130,27 @@ vendas = [120, 80, 250, 40, 310, 95]
 
 # Escreva sua solução abaixo:
 
-maior=0
-menor=0
-total_faturado = 0
-
-for venda in vendas:
-    if venda < 100:
-        menor+=1
+cem_mais = 0
+cem_menos = 0
+total = 0
+for valor in vendas:
+    if valor < 100:
+        cem_menos+=1
     else:
-        maior+=1
-    total_faturado+=venda
-print(f"{maior} vendas de 100 reais ou mais.\n {menor}vendas abaixo de 100 reais.\nTotal faturado R${total_faturado}")
+        cem_mais+=1
+    total+=valor
+print(f"{cem_mais} vendas de 100 reais ou mais.\n {cem_menos}vendas abaixo de 100 reais.\nTotal faturado R${total}")
+
+nota = float(input("Digite sua nota: "))
+if nota >= 7:
+    result = "aprovado"
+elif nota >= 5 and nota < 7:
+    result = "Recuperação"
+else:
+    result = "Reprovado!"
+print(f"Resultado: {result}.")
+
+number = int(input("Digite umnúmero inteiro para gerar a tabuada: "))
+for mult in range (1,11):
+    result = number * mult 
+    print(f"{number} x {mult} = {result}")
